@@ -4,7 +4,7 @@
 
 ### 万物运行于天道源码之上，修炼的尽头是改写世界的权限。
 
-<img src="art/covers/main-cover.png" width="400" alt="编神纪封面" />
+<img src="art/covers/main-cover-titled.png" width="400" alt="编神纪封面" />
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![GitHub stars](https://img.shields.io/github/stars/kevinten-ai/Compiling-the-Dao?style=social)](https://github.com/kevinten-ai/Compiling-the-Dao)
