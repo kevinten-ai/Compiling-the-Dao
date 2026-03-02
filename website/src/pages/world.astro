@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const sections = [
+  { href: '/world/overview', title: '世界总览', desc: '天道源码与核心映射体系' },
+  { href: '/world/cultivation', title: '境界体系', desc: '从码农到造物的修炼之路' },
+  { href: '/world/combat', title: '斗技体系', desc: '算法为剑，递归为刀' },
+  { href: '/world/factions', title: '势力介绍', desc: '开源与闭源的永恒之争' },
+  { href: '/world/characters', title: '角色图鉴', desc: '修炼者的命运与抉择' },
+  { href: '/world/timeline', title: '历史编年', desc: '从创世到稳定的漫长岁月' },
+  { href: '/world/glossary', title: '术语词典', desc: '修真概念与CS概念对照表' },
+  { href: '/world/techniques', title: '术式大全', desc: '快排剑法、递归禁术……' },
+];
+---
+
+<Layout title="世界观" description="编神纪世界观百科">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-2xl font-bold font-mono mb-8">
+      <span class="text-[#8b949e]">$</span> cat worldbuilding/
+    </h1>
+
+    <div class="grid md:grid-cols-2 gap-4">
+      {sections.map((section) => (
+        <a
+          href={section.href}
+          class="block bg-[#161b22] rounded-lg border border-[#30363d] p-6 hover:border-[#58a6ff] transition-colors no-underline"
+        >
+          <h2 class="text-[#58a6ff] font-mono mb-2">{section.title}</h2>
+          <p class="text-[#8b949e] text-sm">{section.desc}</p>
+        </a>
+      ))}
+    </div>
+
+    <!-- Quick reference -->
+    <div class="mt-12 bg-[#161b22] rounded-lg border border-[#30363d] p-6">
+      <h2 class="font-mono text-[#8b949e] mb-4"># 核心映射速查</h2>
+      <div class="grid md:grid-cols-2 gap-4 text-sm">
+        <div class="space-y-2">
+          <p><span class="text-[#d29922]">灵力</span> <span class="text-[#8b949e]">→</span> <span class="text-[#58a6ff]">算力 (Computing Power)</span></p>
+          <p><span class="text-[#d29922]">丹田</span> <span class="text-[#8b949e]">→</span> <span class="text-[#58a6ff]">内核 (Kernel)</span></p>
+          <p><span class="text-[#d29922]">经脉</span> <span class="text-[#8b949e]">→</span> <span class="text-[#58a6ff]">总线 (Bus)</span></p>
+        </div>
+        <div class="space-y-2">
+          <p><span class="text-[#d29922]">神识</span> <span class="text-[#8b949e]">→</span> <span class="text-[#58a6ff]">线程 (Thread)</span></p>
+          <p><span class="text-[#d29922]">术式</span> <span class="text-[#8b949e]">→</span> <span class="text-[#58a6ff]">函数 (Function)</span></p>
+          <p><span class="text-[#d29922]">天道</span> <span class="text-[#8b949e]">→</span> <span class="text-[#58a6ff]">源码 (Source Code)</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

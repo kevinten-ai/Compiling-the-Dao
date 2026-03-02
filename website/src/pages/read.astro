@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const volumes = [
+  {
+    id: 'vol-01',
+    title: 'Hello World',
+    status: '连载中',
+    chapters: [
+      { num: 1, title: '被注释的人生', slug: 'ch-01', words: 4500 },
+      { num: 2, title: 'NullPointerException', slug: 'ch-02', words: 6400 },
+      { num: 3, title: '离开localhost', slug: 'ch-03', words: 8400 },
+      { num: 4, title: 'Hello, World', slug: 'ch-04', words: 5500, new: true },
+    ]
+  },
+  {
+    id: 'vol-02',
+    title: '编译之路',
+    status: '规划中',
+    chapters: []
+  },
+  {
+    id: 'vol-03',
+    title: '分布式战争',
+    status: '规划中',
+    chapters: []
+  },
+  {
+    id: 'vol-04',
+    title: '对齐危机',
+    status: '规划中',
+    chapters: []
+  },
+  {
+    id: 'vol-05',
+    title: '根权之战',
+    status: '规划中',
+    chapters: []
+  },
+  {
+    id: 'vol-06',
+    title: '开源天道',
+    status: '规划中',
+    chapters: []
+  },
+];
+---
+
+<Layout title="阅读" description="编神纪小说章节目录">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Header -->
+    <div class="mb-8">
+      <h1 class="text-2xl font-bold font-mono">
+        <span class="text-[#8b949e]">$</span> ls novel/
+      </h1>
+      <p class="text-[#8b949e] mt-2">总字数: 25K+ | 已发布: 4章 | 总进度: ~2%</p>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="mb-8 bg-[#161b22] rounded-lg border border-[#30363d] p-4">
+      <div class="flex justify-between text-sm mb-2">
+        <span class="text-[#8b949e]">总进度</span>
+        <span class="text-[#58a6ff]">~2%</span>
+      </div>
+      <div class="h-2 bg-[#0d1117] rounded-full overflow-hidden">
+        <div class="h-full bg-gradient-to-r from-[#58a6ff] via-[#3fb950] to-[#d29922] w-[2%]"></div>
+      </div>
+      <p class="text-xs text-[#8b949e] mt-2">25K / ~1,000K 字</p>
+    </div>
+
+    <!-- Volumes -->
+    {volumes.map((volume) => (
+      <div class="mb-6 bg-[#161b22] rounded-lg border border-[#30363d] overflow-hidden">
+        <div class="flex items-center justify-between px-4 py-3 bg-[#0d1117] border-b border-[#30363d]">
+          <h2 class="font-mono">
+            <span class="text-[#8b949e]">./</span>
+            <span class="text-[#58a6ff]">{volume.id}</span>
+            <span class="text-[#8b949e]">/</span>
+          </h2>
+          <span class={`text-xs px-2 py-1 rounded ${volume.status === '连载中' ? 'bg-[#238636] text-white' : 'bg-[#21262d] text-[#8b949e]'}`}>
+            {volume.status}
+          </span>
+        </div>
+        {volume.chapters.length > 0 ? (
+          <div class="divide-y divide-[#30363d]">
+            {volume.chapters.map((chapter) => (
+              <a
+                href={`/read/${volume.id}/${chapter.slug}`}
+                class="flex items-center justify-between px-4 py-3 hover:bg-[#21262d] transition-colors no-underline"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="text-[#8b949e] font-mono text-sm w-8">{String(chapter.num).padStart(2, '0')}</span>
+                  <span class="text-[#c9d1d9]">{chapter.title}</span>
+                  {chapter.new && (
+                    <span class="text-xs px-1.5 py-0.5 bg-[#d29922] text-black rounded font-mono">NEW</span>
+                  )}
+                </div>
+                <span class="text-[#8b949e] text-sm">~{Math.round(chapter.words / 100) / 10}K</span>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div class="px-4 py-8 text-center text-[#8b949e]">
+            <p class="font-mono text-sm"># TODO: 待发布</p>
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+</Layout>

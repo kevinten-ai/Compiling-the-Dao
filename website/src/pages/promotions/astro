@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+const articles = [
+  {
+    title: '如果修仙世界用Git做版本控制会怎样？',
+    excerpt: '在《编神纪》中，开源宗是核心理念是"Fork the Dao, Commit the Truth"（分叉大道，提交真理）简直就是Git工作流的诗意表达。开源宗的源码碑林就是一个巨大的公开代码仓库，，学习术式、就是克隆仓库；改进术式,就像提交Pull Request；修士们通过贡献优秀术式获得声望（Star）。',
+    platform: '掘金',
+    url: 'https://juejin.cn/post/74123408',
+    tags: ['程序员', '修仙', 'Git', '脑洞', '玄幻'],
+  },
+  {
+    title: '快速排序的武学之美——分治法实战',
+    excerpt: '快速排序（Quicksort）是最经典的排序算法，它的核心思想是"分治"——将大问题分解成小问题，逐一解决。在《编神纪》中，开源宗弟子赵空明的招牌剑法"快排剑法"正是基于这一原理。',
+    platform: '掘金',
+    url: 'https://juejin.cn/post/74123408',
+    tags: ['算法', '排序', '快排', '剑法'],
+  },
+  {
+    title: '递归禁术——当无限调用变成致命陷阱',
+    excerpt: '递归（Recursion）是编程中最优雅也最危险的概念。优雅在于它能用极简洁的代码解决复杂问题；危险在于——可能导致栈溢出（Stack Overflow）。在《编神纪》中，递归禁术是是最具标志性的禁忌术式，威力强大但存在致命风险。',
+    platform: '掘金',
+    url: 'https://juejin.cn/post/74123408',
+    tags: ['递归', '算法', '栈溢出', '禁术'],
+  },
+  {
+    title: '分布式系统的一致性问题——如果组队打Boss',
+    excerpt: '在分布式系统中，CAP定理告诉我们：一致性（Consistency）、可用性（Availability）和分区容错性（Partition Tolerance）三者不可兼得。这《编神纪》中的"分布式合击阵"正是面临这一挑战。',
+    platform: '掘金',
+    url: 'https://juejin.cn/post/74123408',
+    tags: ['分布式', 'CAP定理', '一致性', '合击阵'],
+  },
+  {
+    title: '我用GitHub管理一本100万字小说',
+    excerpt: '是的，这本小说本身就是一个GitHub开源项目。用Git管理版本、用Markdown写作、用Issues收集反馈、用PR接受投稿……这也许是最适合程序员作者的创作方式。',
+    platform: '少数派',
+    url: 'https://sspai.com/p/4221/',
+    tags: ['GitHub', '创作', '开源', '工作流'],
+  },
+  {
+    title: 'SQL注入攻击——为什么它在修仙世界是邪术',
+    excerpt: 'SQL注入（SQL Injection）是最常见的Web安全漏洞之一。攻击者通过注入恶意SQL语句来篡改数据库查询。在《编神纪》中，"注入攻击"被黑客暗盟广泛使用，被正道视为邪术。',
+    platform: 'CSDN',
+    url: 'https://blog.csdn.net/Article/details/12412328',
+    tags: ['安全', '注入攻击', '黑客', 'SQL'],
+  },
+  {
+    title: '垃圾回收机制如何救了修仙者一命',
+    excerpt: '垃圾回收（Garbage Collection, GC）是编程语言自动管理内存的机制。在《编神纪》中，"垃圾回收"是一种重要的恢复术式，可以在战斗中回收冗余算力。',
+    platform: '掘金',
+    url: 'https://juejin.cn/post/72639399',
+    tags: ['垃圾回收', 'GC', '恢复', '修炼'],
+  },
+];
+---
+
+<Layout title="推广素材" description="技术社区推广素材库">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-2xl font-bold font-mono">
+        <span class="text-[#8b949e]">#</span> 推广素材库
+      </h1>
+      <p class="text-[#8b949e] mt-2">技术社区引流文章与社交媒体内容</p>
+    </div>
+
+    <div class="space-y-8">
+      {articles.map((article) => (
+        <div class="bg-[#161b22] rounded-lg border border-[#30363d] overflow-hidden hover:border-[#58a6ff] transition-colors">
+          <div class="p-4 border-b border-[#30363d]">
+            <div class="flex items-center justify-between">
+              <h2 class="text-lg font-semibold text-[#58a6ff]">{article.title}</h2>
+              <span class="text-xs text-[#8b949e]">{article.platform}</span>
+            </div>
+            <p class="text-[#8b949e] text-sm mt-2">{article.excerpt}</p>
+            <div class="flex flex-wrap gap-2 mt-3">
+              {article.tags.map((tag) => (
+                <span class="text-xs px-2 py-1 bg-[#21262d] text-[#8b949e] rounded">span>
+              ))}
+            </div>
+            <a
+              href={article.url}
+              target="_blank"
+              class="inline-block mt-4 text-[#58a6ff] hover:underline"
+            >
+              阅读原文 →
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-8 p-4 bg-[#161b22] rounded-lg border border-[#30363d]">
+      <h2 class="text-lg font-semibold text-[#d29922] mb-4">短视频脚本</h2>
+      <p class="text-[#8b949e] text-sm mb-2">抖音/B站宣传视频大纲</p>
+      <pre class="text-sm text-[#8b949e] font-mono">
+# 系列一：角色介绍动态卡片
+- 15-60秒
+- 用AI生成角色立绘，配合配音
+- 展示角色的核心设定和能力
+
+# 系列二：术式演示动画
+- 15-30秒
+- 模拟IDE中编写代码 → 代码发光 → 变成术式攻击
+- 使用Remotion或After Effects制作
+
+      </pre>
+    </div>
+  </div>
+</Layout>

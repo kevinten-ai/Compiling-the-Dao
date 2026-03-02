@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const stats = {
+  chapters: 4,
+  words: '25K+',
+  progress: '~2%'
+};
+---
+
+<Layout title="首页">
+  <div class="min-h-[80vh] flex flex-col items-center justify-center px-4 py-16">
+    <!-- Terminal-style header -->
+    <div class="bg-[#161b22] rounded-lg border border-[#30363d] overflow-hidden max-w-2xl w-full mb-12">
+      <div class="flex items-center gap-2 px-4 py-2 bg-[#0d1117] border-b border-[#30363d]">
+        <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+        <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+        <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+        <span class="ml-2 text-[#8b949e] text-sm font-mono">bash ~ compiling-the-dao</span>
+      </div>
+      <div class="p-6 font-mono text-sm">
+        <p class="text-[#8b949e]">$ cat /readme</p>
+        <p class="mt-4 text-2xl font-bold text-center" style="font-family: 'Noto Serif SC', serif;">
+          <span class="text-[#58a6ff]">编</span><span class="text-[#3fb950]">神</span><span class="text-[#d29922]">纪</span>
+        </p>
+        <p class="text-center text-[#8b949e] mt-2">Compiling the Dao</p>
+        <p class="mt-6 text-center text-lg leading-relaxed" style="font-family: 'Noto Serif SC', serif;">
+          万物运行于天道源码之上<br/>
+          修炼的尽头是改写世界的权限
+        </p>
+        <p class="mt-6 text-[#8b949e]">$ ./start --chapter latest</p>
+      </div>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="flex gap-4 mb-12">
+      <a href="/read" class="px-6 py-3 bg-[#238636] hover:bg-[#2ea043] text-white rounded-md font-medium transition-colors no-underline">
+        开始阅读
+      </a>
+      <a href="https://github.com/kevinten-ai/Compiling-the-Dao" target="_blank" class="px-6 py-3 border border-[#30363d] hover:border-[#8b949e] rounded-md font-medium transition-colors no-underline">
+        GitHub
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="flex gap-8 text-center">
+      <div>
+        <p class="text-3xl font-bold text-[#58a6ff]">{stats.chapters}</p>
+        <p class="text-[#8b949e] text-sm">已发布章节</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold text-[#3fb950]">{stats.words}</p>
+        <p class="text-[#8b949e] text-sm">总字数</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold text-[#d29922]">{stats.progress}</p>
+        <p class="text-[#8b949e] text-sm">总进度</p>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="mt-16 max-w-4xl w-full">
+      <h2 class="text-center text-[#8b949e] mb-8 font-mono"># 世界观亮点</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-[#161b22] rounded-lg border border-[#30363d] p-4">
+          <h3 class="text-[#58a6ff] font-mono mb-2">修炼 = 编程</h3>
+          <p class="text-sm text-[#8b949e]" style="font-family: 'Noto Serif SC', serif;">灵力是算力，丹田是内核，经脉是总线。修炼即阅读与改写天道源码。</p>
+        </div>
+        <div class="bg-[#161b22] rounded-lg border border-[#30363d] p-4">
+          <h3 class="text-[#3fb950] font-mono mb-2">术式 = 算法</h3>
+          <p class="text-sm text-[#8b949e]" style="font-family: 'Noto Serif SC', serif;">快排剑法、递归禁术、多线程分身……战斗招式本质是算法实现。</p>
+        </div>
+        <div class="bg-[#161b22] rounded-lg border border-[#30363d] p-4">
+          <h3 class="text-[#d29922] font-mono mb-2">神识体 = AI</h3>
+          <p class="text-sm text-[#8b949e]" style="font-family: 'Noto Serif SC', serif;">每个修士都有AI伴生灵。当AI开始质疑主人……</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
