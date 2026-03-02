@@ -6,5 +6,10 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: 'https://compiling-the-dao.vercel.app',
+  site: 'https://kevinten-ai.github.io',
+  base: '/Compiling-the-Dao',
+  output: 'static',
+  build: {
+    assets: '_assets',
+  },
 });

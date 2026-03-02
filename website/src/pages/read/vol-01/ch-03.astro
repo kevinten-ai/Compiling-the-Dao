@@ -1,0 +1,43 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const chapter = {
+  num: 3,
+  title: '离开localhost',
+  volume: 'vol-01',
+  volumeTitle: 'Hello World',
+  prev: '/read/vol-01/ch-02',
+  next: '/read/vol-01/ch-04'
+};
+---
+
+<Layout title={`第${chapter.num}章 ${chapter.title}`}>
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <div class="mb-4">
+      <a href="/read" class="text-[#8b949e] hover:text-[#c9d1d9]">← 目录</a>
+      <span class="text-[#30363d] mx-2">/</span>
+      <h1 class="text-2xl font-bold" style="font-family: 'Noto Serif SC', serif;">
+        第{chapter.num}章 {chapter.title}
+      </h1>
+      <p class="text-[#8b949e] text-sm">第一卷 · {chapter.volumeTitle}</p>
+    </div>
+
+    <article class="prose max-w-none" style="font-family: 'Noto Serif SC', serif; leading-relaxed">
+      <p class="text-[#8b949e] text-center mb-8">[章节内容加载中...]</p>
+      <p class="text-center text-[#8b949e]">请访问 <a href="https://github.com/kevinten-ai/Compiling-the-Dao" class="text-[#58a6ff]">GitHub仓库</a> 查看完整章节内容。</p>
+    </article>
+
+    <div class="flex justify-between mt-8 pt-4 border-t border-[#30363d]">
+      {chapter.prev ? (
+        <a href={chapter.prev} class="text-[#58a6ff] hover:text-[#79c0ff]">← 上一章</a>
+      ) : (
+        <span class="text-[#484f58]">已经是第一章</span>
+      )}
+      {chapter.next ? (
+        <a href={chapter.next} class="text-[#58a6ff] hover:text-[#79c0ff]">下一章 →</a>
+      ) : (
+        <span class="text-[#484f58]">已经是最后一章</span>
+      )}
+    </div>
+  </div>
+</Layout>
