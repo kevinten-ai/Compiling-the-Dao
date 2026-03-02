@@ -1,43 +1,42 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 
+const basePath = '/Compiling-the-Dao';
+
 const chapter = {
   num: 3,
   title: '离开localhost',
   volume: 'vol-01',
   volumeTitle: 'Hello World',
-  prev: '/read/vol-01/ch-02',
-  next: '/read/vol-01/ch-04'
+  prev: basePath + '/read/vol-01/ch-02',
+  next: basePath + '/read/vol-01/ch-04'
 };
 ---
 
 <Layout title={`第${chapter.num}章 ${chapter.title}`}>
   <div class="max-w-3xl mx-auto px-4 py-8">
-    <div class="mb-4">
-      <a href="/read" class="text-[#8b949e] hover:text-[#c9d1d9]">← 目录</a>
-      <span class="text-[#30363d] mx-2">/</span>
+    <div class="mb-8">
+      <div class="text-[#8b949e] text-sm mb-2">
+        <a href={basePath + '/read'} class="hover:text-[#58a6ff]">← 目录</a>
+      </div>
       <h1 class="text-2xl font-bold" style="font-family: 'Noto Serif SC', serif;">
-        第{chapter.num}章 {chapter.title}
+        <span class="text-[#8b949e]">// </span>
+        <span class="text-[#c9d1d9]">第{chapter.num}章</span>
+        <span class="text-[#58a6ff]">{chapter.title}</span>
       </h1>
-      <p class="text-[#8b949e] text-sm">第一卷 · {chapter.volumeTitle}</p>
     </div>
 
-    <article class="prose max-w-none" style="font-family: 'Noto Serif SC', serif; leading-relaxed">
-      <p class="text-[#8b949e] text-center mb-8">[章节内容加载中...]</p>
-      <p class="text-center text-[#8b949e]">请访问 <a href="https://github.com/kevinten-ai/Compiling-the-Dao" class="text-[#58a6ff]">GitHub仓库</a> 查看完整章节内容。</p>
+    <article class="text-lg leading-loose text-center py-12" style="font-family: 'Noto Serif SC', serif;">
+      <p class="text-[#8b949e] mb-6">[ 章节内容加载中... ]</p>
+      <a href="https://github.com/kevinten-ai/Compiling-the-Dao/blob/main/novel/vol-01_hello-world/ch-03_%E7%A6%BB%E5%BC%80localhost.md" target="_blank" class="text-[#58a6ff] hover:underline">
+        在 GitHub 上阅读完整章节 →
+      </a>
     </article>
 
-    <div class="flex justify-between mt-8 pt-4 border-t border-[#30363d]">
-      {chapter.prev ? (
-        <a href={chapter.prev} class="text-[#58a6ff] hover:text-[#79c0ff]">← 上一章</a>
-      ) : (
-        <span class="text-[#484f58]">已经是第一章</span>
-      )}
-      {chapter.next ? (
-        <a href={chapter.next} class="text-[#58a6ff] hover:text-[#79c0ff]">下一章 →</a>
-      ) : (
-        <span class="text-[#484f58]">已经是最后一章</span>
-      )}
+    <div class="flex justify-between items-center mt-12 pt-8 border-t border-[#30363d]">
+      <a href={chapter.prev} class="text-[#58a6ff] hover:text-[#79c0ff]">← 上一章</a>
+      <a href={basePath + '/read'} class="text-[#8b949e] hover:text-[#c9d1d9]">目录</a>
+      <a href={chapter.next} class="text-[#58a6ff] hover:text-[#79c0ff]">下一章 →</a>
     </div>
   </div>
 </Layout>

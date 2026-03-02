@@ -1,13 +1,15 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 
+const basePath = '/Compiling-the-Dao';
+
 const chapter = {
   num: 1,
   title: '被注释的人生',
   volume: 'vol-01',
   volumeTitle: 'Hello World',
   prev: null,
-  next: '/read/vol-01/ch-02'
+  next: basePath + '/read/vol-01/ch-02'
 };
 ---
 
@@ -15,7 +17,7 @@ const chapter = {
   <div class="max-w-3xl mx-auto px-4 py-8">
     <div class="mb-8">
       <div class="text-[#8b949e] text-sm mb-2">
-        <a href="/read" class="hover:text-[#58a6ff]">← 目录</a>
+        <a href={basePath + '/read'} class="hover:text-[#58a6ff]">← 目录</a>
       </div>
       <h1 class="text-2xl font-bold" style="font-family: 'Noto Serif SC', serif;">
         <span class="text-[#8b949e]">// </span>
@@ -25,21 +27,15 @@ const chapter = {
     </div>
 
     <article class="text-lg leading-loose" style="font-family: 'Noto Serif SC', serif;">
-      <p class="mb-6 text-indent-8">赤渊城，黎明。</p>
-      <p class="mb-6 text-indent-8">一根高达千丈的算力晶柱贯穿天地，柱身上流淌着幽蓝色的数据流光，如同这座城市永不停歇的脉搏。晶柱底部，是层层叠叠、密如蜂巢的建筑群——那是远古服务器遗迹改建而成的下城区。</p>
-      <p class="mb-6 text-indent-8">叶辰抬头看了一眼晶柱顶端那片被云雾遮蔽的上城区，然后低下头，拐进了一条散发着潮湿霉味的巷道。</p>
-      <p class="mb-6 text-indent-8 text-[#d29922]">万象标注坊。</p>
-      <p class="mb-6 text-indent-8">一块锈迹斑斑的铁牌歪歪斜斜地挂在门口，牌面上的字迹已经模糊。叶辰推门进去，一股混合着汗味和劣质灵石粉尘的气息扑面而来。</p>
-      <p class="mb-6 text-indent-8">工坊里已经坐满了人。</p>
-      <p class="mb-6 text-indent-8">上百个标注工挤在狭窄的隔间里，每人面前悬浮着一块数据光屏。他们的工作很简单——把高级修炼者施展术式时产生的灵力波动记录下来，逐帧标注，分类归档。</p>
-      <p class="mb-6 text-indent-8">这些标注数据会被送到各大宗门，用来训练更精准的术式模型。</p>
-      <p class="mb-6 text-indent-8">听起来好像和修炼沾边？</p>
-      <p class="mb-6 text-indent-8">不。</p>
-      <p class="mb-6 text-indent-8">标注工是这个世界最底层的存在。他们不需要任何灵力，只需要一双眼睛、一双手，以及每天十四个时辰坐在这里不动的耐心。</p>
+      <p class="mb-6" style="text-indent: 2em;">赤渊城，黎明。</p>
+      <p class="mb-6" style="text-indent: 2em;">一根高达千丈的算力晶柱贯穿天地，柱身上流淌着幽蓝色的数据流光，如同这座城市永不停歇的脉搏。晶柱底部，是层层叠叠、密如蜂巢的建筑群——那是远古服务器遗迹改建而成的下城区。</p>
+      <p class="mb-6" style="text-indent: 2em;">叶辰抬头看了一眼晶柱顶端那片被云雾遮蔽的上城区，然后低下头，拐进了一条散发着潮湿霉味的巷道。</p>
+      <p class="mb-6" style="text-indent: 2em; color: #d29922;">万象标注坊。</p>
+      <p class="mb-6" style="text-indent: 2em;">一块锈迹斑斑的铁牌歪歪斜斜地挂在门口，牌面上的字迹已经模糊。叶辰推门进去，一股混合着汗味和劣质灵石粉尘的气息扑面而来。</p>
       <hr class="border-[#30363d] my-8" />
-      <p class="mb-6 text-[#8b949e] text-center">[ 章节内容加载中... ]</p>
+      <p class="mb-6 text-[#8b949e] text-center">[ 完整章节内容请访问 GitHub ]</p>
       <p class="mb-6 text-center">
-        <a href="https://github.com/kevinten-ai/Compiling-the-Dao/blob/main/novel/vol-01_hello-world/ch-01_被注释的人生.md" class="text-[#58a6ff] hover:underline">
+        <a href="https://github.com/kevinten-ai/Compiling-the-Dao/blob/main/novel/vol-01_hello-world/ch-01_%E8%A2%AB%E6%B3%A8%E9%87%8A%E7%9A%84%E4%BA%BA%E7%94%9F.md" target="_blank" class="text-[#58a6ff] hover:underline">
           在 GitHub 上阅读完整章节 →
         </a>
       </p>
@@ -47,14 +43,8 @@ const chapter = {
 
     <div class="flex justify-between items-center mt-12 pt-8 border-t border-[#30363d]">
       <span class="text-[#484f58]">← 上一章</span>
-      <a href="/read" class="text-[#8b949e] hover:text-[#c9d1d9]">目录</a>
+      <a href={basePath + '/read'} class="text-[#8b949e] hover:text-[#c9d1d9]">目录</a>
       <a href={chapter.next} class="text-[#58a6ff] hover:text-[#79c0ff]">下一章 →</a>
     </div>
   </div>
 </Layout>
-
-<style>
-  .text-indent-8 {
-    text-indent: 2em;
-  }
-</style>

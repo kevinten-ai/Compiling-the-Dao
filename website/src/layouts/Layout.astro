@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { title, description = '一部融合修仙与编程的开源玄幻小说' } = Astro.props;
+const basePath = '/Compiling-the-Dao';
 ---
 
 <!DOCTYPE html>
@@ -23,13 +24,13 @@ const { title, description = '一部融合修仙与编程的开源玄幻小说' 
   <body class="bg-[#0d1117] text-[#c9d1d9] min-h-screen">
     <nav class="border-b border-[#30363d] bg-[#161b22]/80 backdrop-blur-sm sticky top-0 z-50">
       <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2 hover:no-underline">
+        <a href={basePath + '/'} class="flex items-center gap-2 hover:no-underline">
           <span class="text-[#58a6ff] font-mono text-lg">&gt;_</span>
           <span class="font-semibold">编神纪</span>
         </a>
         <div class="flex items-center gap-6 text-sm">
-          <a href="/read" class="text-[#8b949e] hover:text-[#c9d1d9] transition-colors">阅读</a>
-          <a href="/world" class="text-[#8b949e] hover:text-[#c9d1d9] transition-colors">世界观</a>
+          <a href={basePath + '/read'} class="text-[#8b949e] hover:text-[#c9d1d9] transition-colors">阅读</a>
+          <a href={basePath + '/world'} class="text-[#8b949e] hover:text-[#c9d1d9] transition-colors">世界观</a>
           <a href="https://github.com/kevinten-ai/Compiling-the-Dao" target="_blank" class="text-[#8b949e] hover:text-[#c9d1d9] transition-colors">GitHub</a>
         </div>
       </div>

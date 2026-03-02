@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const basePath = '/Compiling-the-Dao';
+
 const volumes = [
   {
     id: 'vol-01',
@@ -46,9 +48,8 @@ const volumes = [
 ];
 ---
 
-<Layout title="阅读" description="编神纪小说章节目录">
+<Layout title="阅读">
   <div class="max-w-4xl mx-auto px-4 py-8">
-    <!-- Header -->
     <div class="mb-8">
       <h1 class="text-2xl font-bold font-mono">
         <span class="text-[#8b949e]">$</span> ls novel/
@@ -56,7 +57,6 @@ const volumes = [
       <p class="text-[#8b949e] mt-2">总字数: 25K+ | 已发布: 4章 | 总进度: ~2%</p>
     </div>
 
-    <!-- Progress bar -->
     <div class="mb-8 bg-[#161b22] rounded-lg border border-[#30363d] p-4">
       <div class="flex justify-between text-sm mb-2">
         <span class="text-[#8b949e]">总进度</span>
@@ -68,7 +68,6 @@ const volumes = [
       <p class="text-xs text-[#8b949e] mt-2">25K / ~1,000K 字</p>
     </div>
 
-    <!-- Volumes -->
     {volumes.map((volume) => (
       <div class="mb-6 bg-[#161b22] rounded-lg border border-[#30363d] overflow-hidden">
         <div class="flex items-center justify-between px-4 py-3 bg-[#0d1117] border-b border-[#30363d]">
@@ -85,7 +84,7 @@ const volumes = [
           <div class="divide-y divide-[#30363d]">
             {volume.chapters.map((chapter) => (
               <a
-                href={`/read/${volume.id}/${chapter.slug}`}
+                href={basePath + '/read/' + volume.id + '/' + chapter.slug}
                 class="flex items-center justify-between px-4 py-3 hover:bg-[#21262d] transition-colors no-underline"
               >
                 <div class="flex items-center gap-3">

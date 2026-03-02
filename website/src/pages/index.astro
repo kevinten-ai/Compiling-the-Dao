@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const basePath = '/Compiling-the-Dao';
 const stats = {
   chapters: 4,
   words: '25K+',
@@ -34,7 +35,7 @@ const stats = {
 
     <!-- Action buttons -->
     <div class="flex gap-4 mb-12">
-      <a href="/read" class="px-6 py-3 bg-[#238636] hover:bg-[#2ea043] text-white rounded-md font-medium transition-colors no-underline">
+      <a href={basePath + '/read'} class="px-6 py-3 bg-[#238636] hover:bg-[#2ea043] text-white rounded-md font-medium transition-colors no-underline">
         开始阅读
       </a>
       <a href="https://github.com/kevinten-ai/Compiling-the-Dao" target="_blank" class="px-6 py-3 border border-[#30363d] hover:border-[#8b949e] rounded-md font-medium transition-colors no-underline">

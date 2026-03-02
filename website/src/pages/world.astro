@@ -1,19 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const basePath = '/Compiling-the-Dao';
+
 const sections = [
-  { href: '/world/overview', title: '世界总览', desc: '天道源码与核心映射体系' },
-  { href: '/world/cultivation', title: '境界体系', desc: '从码农到造物的修炼之路' },
-  { href: '/world/combat', title: '斗技体系', desc: '算法为剑，递归为刀' },
-  { href: '/world/factions', title: '势力介绍', desc: '开源与闭源的永恒之争' },
-  { href: '/world/characters', title: '角色图鉴', desc: '修炼者的命运与抉择' },
-  { href: '/world/timeline', title: '历史编年', desc: '从创世到稳定的漫长岁月' },
-  { href: '/world/glossary', title: '术语词典', desc: '修真概念与CS概念对照表' },
-  { href: '/world/techniques', title: '术式大全', desc: '快排剑法、递归禁术……' },
+  { href: '/worldbuilding/overview.md', title: '世界总览', desc: '天道源码与核心映射体系' },
+  { href: '/worldbuilding/cultivation-system.md', title: '境界体系', desc: '从码农到造物的修炼之路' },
+  { href: '/worldbuilding/combat-system.md', title: '斗技体系', desc: '算法为剑，递归为刀' },
+  { href: '/worldbuilding/factions/', title: '势力介绍', desc: '开源与闭源的永恒之争' },
+  { href: '/worldbuilding/characters/', title: '角色图鉴', desc: '修炼者的命运与抉择' },
+  { href: '/worldbuilding/timeline.md', title: '历史编年', desc: '从创世到稳定的漫长岁月' },
+  { href: '/worldbuilding/glossary.md', title: '术语词典', desc: '修真概念与CS概念对照表' },
+  { href: '/worldbuilding/technique-compendium.md', title: '术式大全', desc: '快排剑法、递归禁术……' },
 ];
 ---
 
-<Layout title="世界观" description="编神纪世界观百科">
+<Layout title="世界观">
   <div class="max-w-4xl mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold font-mono mb-8">
       <span class="text-[#8b949e]">$</span> cat worldbuilding/
@@ -22,7 +24,8 @@ const sections = [
     <div class="grid md:grid-cols-2 gap-4">
       {sections.map((section) => (
         <a
-          href={section.href}
+          href={'https://github.com/kevinten-ai/Compiling-the-Dao/blob/main/' + section.href}
+          target="_blank"
           class="block bg-[#161b22] rounded-lg border border-[#30363d] p-6 hover:border-[#58a6ff] transition-colors no-underline"
         >
           <h2 class="text-[#58a6ff] font-mono mb-2">{section.title}</h2>
