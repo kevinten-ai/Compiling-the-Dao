@@ -1,0 +1,30 @@
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 草稿（不公开的写作笔记）
+*.draft.md
+_private/
+_notes/
+
+# 构建产物
+build/
+dist/
+*.epub
+*.pdf
+*.mobi
+
+# Node模块（网站相关）
+node_modules/
+.next/
+.astro/
+
+# 环境变量
+.env
+.env.local
