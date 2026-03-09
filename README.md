@@ -6,6 +6,15 @@
 
 <img src="art/covers/main-cover-titled.png" width="400" alt="编神纪封面" />
 
+### 🎬 [观看动漫宣传片](vedios/编神纪_动漫宣传片_final_watermarked.mp4)
+
+<details>
+<summary>📺 点击预览视频内容</summary>
+
+> 30秒带你进入代码修仙的世界——算力晶柱贯穿天地，远古禁码在体内苏醒，被注释的人生终于开始编译……
+
+</details>
+
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![GitHub stars](https://img.shields.io/github/stars/kevinten-ai/Compiling-the-Dao?style=social)](https://github.com/kevinten-ai/Compiling-the-Dao)
 [![GitHub issues](https://img.shields.io/github/issues/kevinten-ai/Compiling-the-Dao)](https://github.com/kevinten-ai/Compiling-the-Dao/issues)

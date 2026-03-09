@@ -6,6 +6,15 @@
 
 <img src="art/covers/main-cover.png" width="400" alt="Compiling the Dao Cover" />
 
+### 🎬 [Watch Anime Trailer](vedios/编神纪_动漫宣传片_final_watermarked.mp4)
+
+<details>
+<summary>📺 Preview</summary>
+
+> 30 seconds to enter the world of code cultivation — where computing pillars pierce the sky, ancient forbidden code awakens within, and a commented-out life finally begins to compile...
+
+</details>
+
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![GitHub stars](https://img.shields.io/github/stars/kevinten-ai/Compiling-the-Dao?style=social)](https://github.com/kevinten-ai/Compiling-the-Dao)
 
