@@ -13,7 +13,7 @@
 [![chapters](https://img.shields.io/badge/已发布章节-18-green)]()
 [![volume](https://img.shields.io/badge/当前进度-第一卷已完结-brightgreen)]()
 
-[在线阅读 (即将上线)]() |
+[在线阅读](https://kevinten-ai.github.io/Compiling-the-Dao/) |
 [下载电子书](https://github.com/kevinten10/CodeGodChronicles/releases) |
 [世界观百科](worldbuilding/) |
 [参与讨论](https://github.com/kevinten10/CodeGodChronicles/discussions) |
