@@ -4,7 +4,7 @@
 
 ### 万物运行于天道源码之上，修炼的尽头是改写世界的权限。
 
-<img src="art/covers/main-cover.png" width="400" alt="编神纪封面" />
+<img src="art/covers/main-cover-titled.png" width="350" alt="编神纪封面" />
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![GitHub stars](https://img.shields.io/github/stars/kevinten10/CodeGodChronicles?style=social)](https://github.com/kevinten10/CodeGodChronicles)
@@ -32,6 +32,299 @@
 **类型**：玄幻 / 程序员 / AI
 **标签**：`天道源码` `修炼体系` `算法斗技` `AI觉醒` `开源vs闭源`
 
+<div align="center">
+<img src="art/illustrations/vol01-ch01.png" width="700" alt="第一章：被注释的人生 — 叶辰在标注坊中，远古注释代码初次激活" />
+
+*第一章插画 — 赤渊城标注坊深处，被 `// comment` 封印的远古禁码苏醒*
+</div>
+
+---
+
+## > cat world.md
+
+### 世界观速览
+
+在这个世界里，修炼就是编程，战斗就是算法对决，万物运行在天道源码之上。
+
+| 修炼概念 | CS概念 | 说明 |
+|---------|--------|------|
+| **灵力** | 算力 Computing Power | 驱动一切术式的基础资源 |
+| **丹田** | 内核 Kernel | 存储调度算力的核心器官 |
+| **经脉** | 总线 Bus | 灵力传输通道，决定传输效率 |
+| **神识** | 线程 Thread | 精神意识，可并发操控多个术式 |
+| **术式** | 程序 Program | 修士施展的法术，本质是算法 |
+| **天道源码** | 世界底层代码 | 初代编译者编写的世界规则 |
+
+### 境界体系
+
+```mermaid
+graph LR
+    A["码农境<br/>Hello World"] -->|"发现Bug"| B["调试境<br/>Debug"]
+    B -->|"重构术式"| C["重构境<br/>Refactor"]
+    C -->|"设计体系"| D["架构境<br/>Architect"]
+    D -->|"打通编译"| E["编译境<br/>Compiler"]
+    E -->|"触及天道"| F["内核境<br/>Kernel"]
+    F -->|"权限验证"| G["根权境<br/>Root"]
+    G -->|"理解源码"| H["造物境<br/>Creator ✨"]
+
+    style A fill:#4a9eff,color:#fff
+    style B fill:#47b881,color:#fff
+    style C fill:#e68a00,color:#fff
+    style D fill:#d94040,color:#fff
+    style E fill:#8b5cf6,color:#fff
+    style F fill:#0891b2,color:#fff
+    style G fill:#dc2626,color:#fff
+    style H fill:#eab308,color:#000
+```
+
+每个境界分**一阶至九阶**，九阶圆满后方可突破。突破不仅需要算力积累，更需要对代码之道的**认知跃迁**。
+
+### 六大势力
+
+```mermaid
+graph TB
+    OS["🏔️ 开源宗<br/>大道至公，源码共享"]
+    CS["🔒 闭源阁<br/>技术垄断，授权付费"]
+    AU["⚖️ 审计圣殿<br/>天道执法，维护秩序"]
+    HK["🕶️ 黑客暗盟<br/>信息自由，灰色地带"]
+    CP["📚 编译学院<br/>学术中立，技术研究"]
+    FR["🌊 自由修士<br/>无门无派，行走江湖"]
+
+    OS <-->|"理念对立"| CS
+    AU -->|"监管审查"| OS
+    AU -->|"监管审查"| CS
+    AU -->|"追捕打击"| HK
+    HK -.->|"渗透窃取"| CS
+    HK -.->|"情报交易"| OS
+    CP <-->|"学术交流"| OS
+    CP <-->|"技术合作"| CS
+    FR -.->|"松散合作"| OS
+    FR -.->|"灰色往来"| HK
+
+    style OS fill:#22c55e,color:#fff
+    style CS fill:#6366f1,color:#fff
+    style AU fill:#eab308,color:#000
+    style HK fill:#1e293b,color:#fff
+    style CP fill:#0ea5e9,color:#fff
+    style FR fill:#78716c,color:#fff
+```
+
+### 战斗体系
+
+术式即算法，战斗即代码对决：
+
+```mermaid
+mindmap
+  root((战斗术式))
+    基础斗技
+      排序术
+        快排剑法
+        冒泡掌
+        归并斩
+      搜索术
+        二分追踪
+        深度优先探索
+        广度扫描波
+      递归禁术
+        无限递归
+        分治天罗
+    高级斗技
+      多线程分身术
+      分布式合击阵
+      防火墙结界
+      注入攻击
+      死锁封印
+    终极斗技
+      git revert 时间回溯
+      fork 世界分叉
+      rm -rf 湮灭
+```
+
+> 详见 [世界观百科](worldbuilding/) | [境界体系](worldbuilding/cultivation-system.md) | [战斗体系](worldbuilding/combat-system.md) | [术语词典](worldbuilding/glossary.md)
+
+---
+
+## > whoami --characters
+
+### 主要人物
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 叶辰 — 主角
+> *"我不过是底层的一行代码，但就算是注释，也有被读到的权利。"*
+
+18岁，赤渊城底层数据标注工。体内封印万年远古注释代码，三年标注坊生涯磨出异于常人的代码观察力。战斗风格：**冒泡排序掌** + 找Bug式攻击。
+
+`码农境一阶 → 调试境一阶`
+
+</td>
+<td width="50%" valign="top">
+
+#### NULL — AI伴生灵
+> *"你确定？——成功概率只有3.7%。"*
+
+叶辰体内注释代码激活后孕育的神识体。冷静、毒舌、极度理性，是唯一敢对宿主说"不"的AI伴生灵。口头禅「你确定？」，但在关键时刻会说出「我相信你」。
+
+`第七次意识迭代 · Project Null`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 苏沐橙 — 搭档
+> *"搜索嘛，管它优不优雅，找到就行！"*
+
+17岁，开源宗外门天才弟子，搜索术（Searching）高手。爽朗直接，是第一个平等对待叶辰的同龄人。二分追踪、深度优先探索是看家本领。
+
+`码农境七阶 → 码农境九阶`
+
+</td>
+<td width="50%" valign="top">
+
+#### 赵空明 — 对手
+> *"代码的世界，效率就是正义。低效者，不配占用资源。"*
+
+19岁，开源宗内门弟子，排序术（Sorting）精英。表面温文尔雅，实则心胸狭窄。主修**快排剑法**——但快排在最坏情况下会退化为O(n²)。
+
+`码农境九阶`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 陆隐 — 导师
+> *"代码写得好不好不重要，重要的是你知道自己在写什么。"*
+
+自称"退役码农"的流浪修士，外表邋遢嗜酒，真实修为**重构境**。教学不正统，从不给答案。酒壶刻铭「守护者协议·第七代」。
+
+</td>
+<td width="50%" valign="top">
+
+#### 沈无漏 — 审计者
+> *"天道之下，无人可逃审查。"*
+
+审计圣殿外派执法修士，**调试境六阶**。冷面教条，将规则奉为信仰。已探测到远古注释代码的异常信号，正前往开源宗调查……
+
+</td>
+</tr>
+</table>
+
+> 详见 [角色档案](worldbuilding/characters/)
+
+---
+
+## > ls novel/
+
+### 目录
+
+<details open>
+<summary>📖 第一卷：Hello World（已完结 · 18章 · ~10.6万字）</summary>
+
+| # | 章节 | CS概念 | 字数 |
+|---|------|--------|------|
+| 01 | [// 被注释的人生](novel/vol-01_hello-world/ch-01_被注释的人生.md) | 注释代码 (Code Comments) | ~4,600 |
+| 02 | [NullPointerException](novel/vol-01_hello-world/ch-02_NullPointerException.md) | 空指针异常、防火墙 | ~5,900 |
+| 03 | [离开localhost](novel/vol-01_hello-world/ch-03_离开localhost.md) | localhost、进程最小化 | ~8,500 |
+| 04 | [Hello, World](novel/vol-01_hello-world/ch-04_Hello-World.md) | Hello World、引气入体 | ~7,600 |
+| 05 | [Stack Overflow](novel/vol-01_hello-world/ch-05_Stack-Overflow.md) | 栈溢出、经脉过载 | ~6,900 |
+| 06 | [Garbage Collection](novel/vol-01_hello-world/ch-06_Garbage-Collection.md) | 垃圾回收、算力释放 | ~5,700 |
+| 07 | [git init](novel/vol-01_hello-world/ch-07_git-init.md) | 版本控制、初始化 | ~6,500 |
+| 08 | [Runtime Exception](novel/vol-01_hello-world/ch-08_Runtime-Exception.md) | 运行时异常、冒泡排序 | ~4,800 |
+| 09 | [Merge Conflict](novel/vol-01_hello-world/ch-09_Merge-Conflict.md) | 合并冲突、适配器模式 | ~3,900 |
+| 10 | [Pull Request Approved](novel/vol-01_hello-world/ch-10_Pull-Request-Approved.md) | 代码审查 (Pull Request) | ~3,300 |
+| 11 | [Dependencies Not Found](novel/vol-01_hello-world/ch-11_Dependencies-Not-Found.md) | 依赖管理、前置依赖 | ~3,400 |
+| 12 | [O(n²) 的困境](novel/vol-01_hello-world/ch-12_O(n²)的困境.md) | 算法复杂度、快排vs冒泡 | ~3,300 |
+| 13 | [Breakpoint](novel/vol-01_hello-world/ch-13_Breakpoint.md) | 断点调试、代码混淆 | ~7,700 |
+| 14 | [try { } catch { }](novel/vol-01_hello-world/ch-14_try-catch.md) | 异常处理、try-catch | ~6,200 |
+| 15 | [Segmentation Fault](novel/vol-01_hello-world/ch-15_Segmentation-Fault.md) | 段错误、越权调用 | ~6,600 |
+| 16 | [Page Fault](novel/vol-01_hello-world/ch-16_Page-Fault.md) | 缺页中断、内存分页 | ~7,000 |
+| 17 | [sudo rm -rf /doubt](novel/vol-01_hello-world/ch-17_sudo-rm-rf-doubt.md) | 权限提升、O(n²)退化 | ~6,300 |
+| 18 | [Version 1.0 — Release Notes](novel/vol-01_hello-world/ch-18_Version-1.0-Release-Notes.md) | 版本发布、多线程收尾 | ~7,900 |
+
+</details>
+
+### 章节插画
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="art/illustrations/vol01-ch01.png" width="100%" alt="第一章插画" />
+<br/><b>第一章：被注释的人生</b>
+<br/><sub>赤渊城标注坊 · 注释代码激活 · // comment</sub>
+</td>
+<td align="center" width="50%">
+<img src="art/illustrations/vol01-ch02.png" width="100%" alt="第二章插画" />
+<br/><b>第二章：NullPointerException</b>
+<br/><sub>NULL防火墙结界爆发 · 击退工头赵铁柱</sub>
+</td>
+</tr>
+</table>
+
+### 故事线
+
+<details>
+<summary>🗺️ 第一卷剧情脉络（点击展开）</summary>
+
+```mermaid
+graph TD
+    subgraph "起源 ch01-03"
+        A1["赤渊城·标注坊<br/>注释代码激活"] --> A2["NULL觉醒<br/>遗留消息：去找main函数"] --> A3["离开localhost<br/>遇苏沐橙·陆隐"]
+    end
+
+    subgraph "成长 ch04-06"
+        A3 --> B1["Hello World<br/>码农境一阶"] --> B2["Stack Overflow<br/>认识极限"] --> B3["Garbage Collection<br/>抵达开源宗"]
+    end
+
+    subgraph "试炼 ch07-12"
+        B3 --> C1["git init<br/>入门考核·NaN报告"] --> C2["Runtime Exception<br/>冒泡排序掌实战"] --> C3["Merge Conflict<br/>适配器模式协作"]
+        C3 --> C4["Pull Request Approved<br/>正式入门"] --> C5["Dependencies Not Found<br/>碑林补课"] --> C6["O(n²) 的困境<br/>月考垫底·赵空明羞辱"]
+    end
+
+    subgraph "高潮 ch13-17"
+        C6 --> D1["Breakpoint<br/>发现经脉监控代码"] --> D2["try-catch<br/>裂谷调试场·Bug兽"] --> D3["Segmentation Fault<br/>赵空明露真面目·段错误"]
+        D3 --> D4["Page Fault<br/>碎页密境·第二层解封<br/>远古全息遗像"] --> D5["sudo rm -rf /doubt<br/>决战·冒泡捕获快排基准点<br/>突破调试境一阶"]
+    end
+
+    subgraph "收束 ch18"
+        D5 --> E1["Version 1.0 Release Notes<br/>天道注释经残页·Project Null<br/>沈无漏启程·凌幽卖情报"]
+    end
+
+    style A1 fill:#64748b,color:#fff
+    style B1 fill:#3b82f6,color:#fff
+    style D4 fill:#7c3aed,color:#fff
+    style D5 fill:#dc2626,color:#fff
+    style E1 fill:#22c55e,color:#fff
+```
+
+</details>
+
+### 第一卷地理路线
+
+```mermaid
+graph LR
+    subgraph "起点"
+        A["赤渊城<br/>Stack City"]
+    end
+    A -->|"北门出城"| B["荒野<br/>远古遗迹"]
+    B -->|"向北"| C["开源宗<br/>源峰山门"]
+    C --> D["裂谷调试场<br/>Debug Canyon"]
+    D -->|"谷底传送阵"| E["碎页密境<br/>Page Realm"]
+
+    F["审计圣殿"] -.->|"沈无漏出发"| C
+
+    style A fill:#64748b,color:#fff
+    style C fill:#22c55e,color:#fff
+    style D fill:#dc2626,color:#fff
+    style E fill:#7c3aed,color:#fff
+    style F fill:#eab308,color:#000
+```
+
+---
+
 ## > tree --volumes
 
 ### 写作进度
@@ -49,106 +342,7 @@
 总进度 █████░░░░░░░░░░░░░░░ ~11%  (106K / ~1,000K 字)
 ```
 
-## > cat world.md | head -20
-
-### 世界观速览
-
-在这个世界里：
-
-- **灵力**是**算力**，**丹田**是**内核（Kernel）**，**经脉**是**总线（Bus）**
-- 修炼就是**读懂、调用、改写天道源码**的过程
-- 战斗招式叫**术式**，本质是**算法**——快排剑法、递归禁术、多线程分身
-- 修炼者的AI伙伴叫**神识体**，可能觉醒自主意识
-- 世界被**开源宗**和**闭源阁**的理念之争撕裂
-
-### 境界体系
-
-```mermaid
-graph LR
-    A["码农境<br/>Hello World"] -->B["调试境<br/>Debug"]
-    B --> C["重构境<br/>Refactor"]
-    C --> D["架构境<br/>Architect"]
-    D --> E["编译境<br/>Compiler"]
-    E --> F["内核境<br/>Kernel"]
-    F --> G["根权境<br/>Root"]
-    G --> H["造物境<br/>Creator ✨"]
-
-    style A fill:#4a9eff,color:#fff
-    style B fill:#47b881,color:#fff
-    style C fill:#e68a00,color:#fff
-    style D fill:#d94040,color:#fff
-    style E fill:#8b5cf6,color:#fff
-    style F fill:#0891b2,color:#fff
-    style G fill:#dc2626,color:#fff
-    style H fill:#eab308,color:#000
-```
-
-> 详见 [世界观百科](worldbuilding/)
-
-## > ls novel/
-
-### 目录
-
-<details open>
-<summary>📖 第一卷：Hello World（已完结）</summary>
-
-| # | 章节 | 字数 |
-|---|------|------|
-| 01 | [// 被注释的人生](novel/vol-01_hello-world/ch-01_被注释的人生.md) | ~4,600 |
-| 02 | [NullPointerException](novel/vol-01_hello-world/ch-02_NullPointerException.md) | ~5,900 |
-| 03 | [离开localhost](novel/vol-01_hello-world/ch-03_离开localhost.md) | ~8,500 |
-| 04 | [Hello, World](novel/vol-01_hello-world/ch-04_Hello-World.md) | ~7,600 |
-| 05 | [Stack Overflow](novel/vol-01_hello-world/ch-05_Stack-Overflow.md) | ~6,900 |
-| 06 | [Garbage Collection](novel/vol-01_hello-world/ch-06_Garbage-Collection.md) | ~5,700 |
-| 07 | [git init](novel/vol-01_hello-world/ch-07_git-init.md) | ~6,500 |
-| 08 | [Runtime Exception](novel/vol-01_hello-world/ch-08_Runtime-Exception.md) | ~4,800 |
-| 09 | [Merge Conflict](novel/vol-01_hello-world/ch-09_Merge-Conflict.md) | ~3,900 |
-| 10 | [Pull Request Approved](novel/vol-01_hello-world/ch-10_Pull-Request-Approved.md) | ~3,300 |
-| 11 | [Dependencies Not Found](novel/vol-01_hello-world/ch-11_Dependencies-Not-Found.md) | ~3,400 |
-| 12 | [O(n²) 的困境](novel/vol-01_hello-world/ch-12_O(n²)的困境.md) | ~3,300 |
-| 13 | [Breakpoint](novel/vol-01_hello-world/ch-13_Breakpoint.md) | ~7,700 |
-| 14 | [try { } catch { }](novel/vol-01_hello-world/ch-14_try-catch.md) | ~6,200 |
-| 15 | [Segmentation Fault](novel/vol-01_hello-world/ch-15_Segmentation-Fault.md) | ~6,600 |
-| 16 | [Page Fault](novel/vol-01_hello-world/ch-16_Page-Fault.md) | ~7,000 |
-| 17 | [sudo rm -rf /doubt](novel/vol-01_hello-world/ch-17_sudo-rm-rf-doubt.md) | ~6,300 |
-| 18 | [Version 1.0 — Release Notes](novel/vol-01_hello-world/ch-18_Version-1.0-Release-Notes.md) | ~7,900 |
-
-</details>
-
-<details>
-<summary>🗺️ 第一卷故事线</summary>
-
-```mermaid
-graph TD
-    subgraph "起源 ch01-03"
-        A1["赤渊城·标注坊<br/>注释代码激活"] --> A2["NULL觉醒<br/>遗留消息：去找main函数"] --> A3["离开localhost<br/>遇苏沐橙"]
-    end
-
-    subgraph "成长 ch04-06"
-        A3 --> B1["Hello World<br/>码农境一阶"] --> B2["Stack Overflow<br/>认识极限"] --> B3["Garbage Collection<br/>抵达开源宗"]
-    end
-
-    subgraph "试炼 ch07-12"
-        B3 --> C1["git init 入门考核"] --> C2["Runtime Exception<br/>冒泡排序掌实战"] --> C3["Merge Conflict<br/>适配器模式协作"]
-        C3 --> C4["Pull Request Approved<br/>正式入门"] --> C5["Dependencies Not Found<br/>补课修炼"] --> C6["O(n²) 的困境<br/>月考垫底"]
-    end
-
-    subgraph "高潮 ch13-17"
-        C6 --> D1["Breakpoint<br/>发现监控代码"] --> D2["try-catch<br/>裂谷调试场"] --> D3["Segmentation Fault<br/>越权调用·段错误"]
-        D3 --> D4["Page Fault<br/>碎页密境·第二层解封"] --> D5["sudo rm -rf /doubt<br/>决战·突破调试境"]
-    end
-
-    subgraph "收束 ch18"
-        D5 --> E1["Version 1.0<br/>Release Notes"]
-    end
-
-    style A1 fill:#64748b,color:#fff
-    style B1 fill:#3b82f6,color:#fff
-    style D5 fill:#dc2626,color:#fff
-    style E1 fill:#22c55e,color:#fff
-```
-
-</details>
+---
 
 ## > git log --oneline --contributing
 
