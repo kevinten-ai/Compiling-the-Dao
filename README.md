@@ -57,88 +57,29 @@
 
 ### 境界体系
 
-```mermaid
-graph LR
-    A["码农境<br/>Hello World"] -->|"发现Bug"| B["调试境<br/>Debug"]
-    B -->|"重构术式"| C["重构境<br/>Refactor"]
-    C -->|"设计体系"| D["架构境<br/>Architect"]
-    D -->|"打通编译"| E["编译境<br/>Compiler"]
-    E -->|"触及天道"| F["内核境<br/>Kernel"]
-    F -->|"权限验证"| G["根权境<br/>Root"]
-    G -->|"理解源码"| H["造物境<br/>Creator ✨"]
-
-    style A fill:#4a9eff,color:#fff
-    style B fill:#47b881,color:#fff
-    style C fill:#e68a00,color:#fff
-    style D fill:#d94040,color:#fff
-    style E fill:#8b5cf6,color:#fff
-    style F fill:#0891b2,color:#fff
-    style G fill:#dc2626,color:#fff
-    style H fill:#eab308,color:#000
-```
+<div align="center">
+<img src="art/illustrations/cultivation-system.png" width="400" alt="修炼境界体系 — 从码农境到造物境的八大修炼境界" />
+</div>
 
 每个境界分**一阶至九阶**，九阶圆满后方可突破。突破不仅需要算力积累，更需要对代码之道的**认知跃迁**。
 
 ### 六大势力
 
-```mermaid
-graph TB
-    OS["🏔️ 开源宗<br/>大道至公，源码共享"]
-    CS["🔒 闭源阁<br/>技术垄断，授权付费"]
-    AU["⚖️ 审计圣殿<br/>天道执法，维护秩序"]
-    HK["🕶️ 黑客暗盟<br/>信息自由，灰色地带"]
-    CP["📚 编译学院<br/>学术中立，技术研究"]
-    FR["🌊 自由修士<br/>无门无派，行走江湖"]
+<div align="center">
+<img src="art/illustrations/faction-relationship.png" width="600" alt="六大势力关系图 — 开源宗、闭源阁、审计圣殿、黑客暗盟、编译学院、自由修士" />
+</div>
 
-    OS <-->|"理念对立"| CS
-    AU -->|"监管审查"| OS
-    AU -->|"监管审查"| CS
-    AU -->|"追捕打击"| HK
-    HK -.->|"渗透窃取"| CS
-    HK -.->|"情报交易"| OS
-    CP <-->|"学术交流"| OS
-    CP <-->|"技术合作"| CS
-    FR -.->|"松散合作"| OS
-    FR -.->|"灰色往来"| HK
-
-    style OS fill:#22c55e,color:#fff
-    style CS fill:#6366f1,color:#fff
-    style AU fill:#eab308,color:#000
-    style HK fill:#1e293b,color:#fff
-    style CP fill:#0ea5e9,color:#fff
-    style FR fill:#78716c,color:#fff
-```
+开源宗与闭源阁理念对立，审计圣殿监管一切，黑客暗盟游走灰色地带，编译学院保持学术中立，自由修士行走江湖。
 
 ### 战斗体系
 
 术式即算法，战斗即代码对决：
 
-```mermaid
-mindmap
-  root((战斗术式))
-    基础斗技
-      排序术
-        快排剑法
-        冒泡掌
-        归并斩
-      搜索术
-        二分追踪
-        深度优先探索
-        广度扫描波
-      递归禁术
-        无限递归
-        分治天罗
-    高级斗技
-      多线程分身术
-      分布式合击阵
-      防火墙结界
-      注入攻击
-      死锁封印
-    终极斗技
-      git revert 时间回溯
-      fork 世界分叉
-      rm -rf 湮灭
-```
+<div align="center">
+<img src="art/illustrations/combat-system.png" width="600" alt="战斗术式体系 — 基础斗技、高级斗技、终极斗技三层技能树" />
+</div>
+
+从**排序术·搜索术**等基础斗技，到**多线程分身·死锁封印**等高级斗技，再到传说中的**git revert 时间回溯·fork 世界分叉**——术式的尽头是改写世界。
 
 > 详见 [世界观百科](worldbuilding/) | [境界体系](worldbuilding/cultivation-system.md) | [战斗体系](worldbuilding/combat-system.md) | [术语词典](worldbuilding/glossary.md)
 
@@ -212,6 +153,12 @@ mindmap
 </td>
 </tr>
 </table>
+
+### 人物关系
+
+<div align="center">
+<img src="art/illustrations/character-relationships.png" width="600" alt="第一卷人物关系图 — 叶辰为中心，与NULL、苏沐橙、赵空明、陆隐、沈无漏、凌幽的关系网" />
+</div>
 
 > 详见 [角色档案](worldbuilding/characters/)
 
@@ -304,24 +251,11 @@ graph TD
 
 ### 第一卷地理路线
 
-```mermaid
-graph LR
-    subgraph "起点"
-        A["赤渊城<br/>Stack City"]
-    end
-    A -->|"北门出城"| B["荒野<br/>远古遗迹"]
-    B -->|"向北"| C["开源宗<br/>源峰山门"]
-    C --> D["裂谷调试场<br/>Debug Canyon"]
-    D -->|"谷底传送阵"| E["碎页密境<br/>Page Realm"]
+<div align="center">
+<img src="art/illustrations/world-map.png" width="700" alt="第一卷世界地图 — 赤渊城→荒野→开源宗→裂谷调试场→碎页密境" />
+</div>
 
-    F["审计圣殿"] -.->|"沈无漏出发"| C
-
-    style A fill:#64748b,color:#fff
-    style C fill:#22c55e,color:#fff
-    style D fill:#dc2626,color:#fff
-    style E fill:#7c3aed,color:#fff
-    style F fill:#eab308,color:#000
-```
+叶辰从**赤渊城**出发，途经荒野远古遗迹，到达**开源宗**源峰山门。深入**裂谷调试场**后通过谷底传送阵进入**碎页密境**。与此同时，审计圣殿的沈无漏正从远方启程……
 
 ---
 
