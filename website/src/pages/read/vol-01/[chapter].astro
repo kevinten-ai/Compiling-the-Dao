@@ -1,0 +1,127 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { vol01Chapters } from '../../../data/chapters';
+import fs from 'node:fs';
+import path from 'node:path';
+import { marked } from 'marked';
+
+const basePath = '/Compiling-the-Dao';
+
+export function getStaticPaths() {
+  return vol01Chapters.map((ch, index) => ({
+    params: { chapter: ch.slug },
+    props: { ...ch, index },
+  }));
+}
+
+const { num, title, file, words, index } = Astro.props;
+
+const prevChapter = index > 0 ? vol01Chapters[index - 1] : null;
+const nextChapter = index < vol01Chapters.length - 1 ? vol01Chapters[index + 1] : null;
+
+// Read and render markdown at build time
+const novelDir = path.resolve('../novel/vol-01_hello-world');
+const raw = fs.readFileSync(path.join(novelDir, file), 'utf-8');
+
+// Strip frontmatter and h1 title
+const body = raw
+  .replace(/^---[\s\S]*?---\s*/, '')
+  .replace(/^#\s+.*\n+/, '');
+
+const htmlContent = await marked.parse(body);
+---
+
+<Layout title={`第${num}章 ${title}`}>
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <div class="mb-8">
+      <div class="text-[#8b949e] text-sm mb-2 flex items-center gap-2">
+        <a href={basePath + '/read'} class="hover:text-[#58a6ff]">← 目录</a>
+        <span>·</span>
+        <span>第一卷 Hello World</span>
+        <span>·</span>
+        <span>~{(words / 1000).toFixed(1)}K 字</span>
+      </div>
+      <h1 class="text-2xl font-bold" style="font-family: 'Noto Serif SC', serif;">
+        <span class="text-[#8b949e]">// </span>
+        <span class="text-[#c9d1d9]">第{num}章 </span>
+        <span class="text-[#58a6ff]">{title}</span>
+      </h1>
+    </div>
+
+    <article
+      class="chapter-content text-lg leading-loose"
+      style="font-family: 'Noto Serif SC', serif;"
+      set:html={htmlContent}
+    />
+
+    <div class="flex justify-between items-center mt-12 pt-8 border-t border-[#30363d]">
+      {prevChapter ? (
+        <a href={`${basePath}/read/vol-01/${prevChapter.slug}`} class="text-[#58a6ff] hover:text-[#79c0ff]">← 上一章</a>
+      ) : (
+        <span class="text-[#484f58]">← 上一章</span>
+      )}
+      <a href={basePath + '/read'} class="text-[#8b949e] hover:text-[#c9d1d9]">目录</a>
+      {nextChapter ? (
+        <a href={`${basePath}/read/vol-01/${nextChapter.slug}`} class="text-[#58a6ff] hover:text-[#79c0ff]">下一章 →</a>
+      ) : (
+        <span class="text-[#484f58]">第一卷完 ✦</span>
+      )}
+    </div>
+  </div>
+</Layout>
+
+<style is:global>
+  .chapter-content p {
+    margin-bottom: 1.5rem;
+    text-indent: 2em;
+  }
+  .chapter-content hr {
+    border-color: #30363d;
+    margin: 2rem 0;
+  }
+  .chapter-content blockquote {
+    border-left: 3px solid #58a6ff;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #8b949e;
+    text-indent: 0;
+  }
+  .chapter-content blockquote p {
+    text-indent: 0;
+  }
+  .chapter-content pre {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    text-indent: 0;
+  }
+  .chapter-content code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875em;
+    background: #161b22;
+    padding: 0.15em 0.4em;
+    border-radius: 0.25rem;
+    color: #79c0ff;
+  }
+  .chapter-content pre code {
+    background: none;
+    padding: 0;
+  }
+  .chapter-content h2, .chapter-content h3 {
+    color: #58a6ff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-indent: 0;
+  }
+  .chapter-content strong {
+    color: #e6edf3;
+  }
+  .chapter-content em {
+    color: #d29922;
+  }
+</style>
