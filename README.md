@@ -1,31 +1,22 @@
 <div align="center">
 
-# 编神纪 · Compiling the Dao
+# 编神纪 · CodeGodChronicles
 
 ### 万物运行于天道源码之上，修炼的尽头是改写世界的权限。
 
-<img src="art/covers/main-cover-titled.png" width="400" alt="编神纪封面" />
-
-### 🎬 [观看动漫宣传片](vedios/编神纪_动漫宣传片_final_watermarked.mp4)
-
-<details>
-<summary>📺 点击预览视频内容</summary>
-
-> 30秒带你进入代码修仙的世界——算力晶柱贯穿天地，远古禁码在体内苏醒，被注释的人生终于开始编译……
-
-</details>
+<img src="art/covers/main-cover.png" width="400" alt="编神纪封面" />
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![GitHub stars](https://img.shields.io/github/stars/kevinten-ai/Compiling-the-Dao?style=social)](https://github.com/kevinten-ai/Compiling-the-Dao)
-[![GitHub issues](https://img.shields.io/github/issues/kevinten-ai/Compiling-the-Dao)](https://github.com/kevinten-ai/Compiling-the-Dao/issues)
-[![word count](https://img.shields.io/badge/总字数-19%2C300-blue)]()
-[![chapters](https://img.shields.io/badge/已发布章节-3-green)]()
-[![volume](https://img.shields.io/badge/当前进度-第一卷连载中-orange)]()
+[![GitHub stars](https://img.shields.io/github/stars/kevinten10/CodeGodChronicles?style=social)](https://github.com/kevinten10/CodeGodChronicles)
+[![GitHub issues](https://img.shields.io/github/issues/kevinten10/CodeGodChronicles)](https://github.com/kevinten10/CodeGodChronicles/issues)
+[![word count](https://img.shields.io/badge/总字数-106%2C000-blue)]()
+[![chapters](https://img.shields.io/badge/已发布章节-18-green)]()
+[![volume](https://img.shields.io/badge/当前进度-第一卷已完结-brightgreen)]()
 
 [在线阅读 (即将上线)]() |
-[下载电子书](https://github.com/kevinten-ai/Compiling-the-Dao/releases) |
+[下载电子书](https://github.com/kevinten10/CodeGodChronicles/releases) |
 [世界观百科](worldbuilding/) |
-[参与讨论](https://github.com/kevinten-ai/Compiling-the-Dao/discussions) |
+[参与讨论](https://github.com/kevinten10/CodeGodChronicles/discussions) |
 [English](README_EN.md)
 
 </div>
@@ -47,7 +38,7 @@
 
 | 卷 | 标题 | 状态 | 章节 | 字数 |
 |----|------|------|------|------|
-| 1 | Hello World | 🔄 连载中 | 3/18 | 19K |
+| 1 | Hello World | ✅ 已完结 | 18/18 | 106K |
 | 2 | 编译之路 | ⏳ 规划中 | - | - |
 | 3 | 分布式战争 | ⏳ 规划中 | - | - |
 | 4 | 对齐危机 | ⏳ 规划中 | - | - |
@@ -55,7 +46,7 @@
 | 6 | 开源天道 | ⏳ 规划中 | - | - |
 
 ```
-总进度 ██░░░░░░░░░░░░░░░░░░ ~2%  (19K / ~1,000K 字)
+总进度 █████░░░░░░░░░░░░░░░ ~11%  (106K / ~1,000K 字)
 ```
 
 ## > cat world.md | head -20
@@ -72,10 +63,24 @@
 
 ### 境界体系
 
-```
-码农境 → 调试境 → 重构境 → 架构境 → 编译境 → 内核境 → 根权境 → 造物境(传说)
- Hello    Debug   Refactor  Architect Compiler  Kernel    Root     Creator
- World
+```mermaid
+graph LR
+    A["码农境<br/>Hello World"] -->B["调试境<br/>Debug"]
+    B --> C["重构境<br/>Refactor"]
+    C --> D["架构境<br/>Architect"]
+    D --> E["编译境<br/>Compiler"]
+    E --> F["内核境<br/>Kernel"]
+    F --> G["根权境<br/>Root"]
+    G --> H["造物境<br/>Creator ✨"]
+
+    style A fill:#4a9eff,color:#fff
+    style B fill:#47b881,color:#fff
+    style C fill:#e68a00,color:#fff
+    style D fill:#d94040,color:#fff
+    style E fill:#8b5cf6,color:#fff
+    style F fill:#0891b2,color:#fff
+    style G fill:#dc2626,color:#fff
+    style H fill:#eab308,color:#000
 ```
 
 > 详见 [世界观百科](worldbuilding/)
@@ -84,29 +89,64 @@
 
 ### 目录
 
-<details>
-<summary>📖 第一卷：Hello World（连载中）</summary>
+<details open>
+<summary>📖 第一卷：Hello World（已完结）</summary>
 
 | # | 章节 | 字数 |
 |---|------|------|
-| 01 | [// 被注释的人生](novel/vol-01_hello-world/ch-01_被注释的人生.md) | ~4,500 |
-| 02 | [NullPointerException](novel/vol-01_hello-world/ch-02_NullPointerException.md) | ~6,400 |
-| 03 | [离开localhost](novel/vol-01_hello-world/ch-03_离开localhost.md) | ~8,400 |
-| 04 | Hello, World | 即将发布 |
-| 05 | Stack Overflow | - |
-| 06 | Garbage Collection | - |
-| 07 | git init | - |
-| 08 | Runtime Exception | - |
-| 09 | Merge Conflict | - |
-| 10 | Pull Request Approved | - |
-| 11 | Dependencies Not Found | - |
-| 12 | O(n²) 的困境 | - |
-| 13 | Breakpoint | - |
-| 14 | try { } catch { } | - |
-| 15 | Segmentation Fault | - |
-| 16 | Page Fault | - |
-| 17 | sudo rm -rf /doubt | - |
-| 18 | Version 1.0 — Release Notes | - |
+| 01 | [// 被注释的人生](novel/vol-01_hello-world/ch-01_被注释的人生.md) | ~4,600 |
+| 02 | [NullPointerException](novel/vol-01_hello-world/ch-02_NullPointerException.md) | ~5,900 |
+| 03 | [离开localhost](novel/vol-01_hello-world/ch-03_离开localhost.md) | ~8,500 |
+| 04 | [Hello, World](novel/vol-01_hello-world/ch-04_Hello-World.md) | ~7,600 |
+| 05 | [Stack Overflow](novel/vol-01_hello-world/ch-05_Stack-Overflow.md) | ~6,900 |
+| 06 | [Garbage Collection](novel/vol-01_hello-world/ch-06_Garbage-Collection.md) | ~5,700 |
+| 07 | [git init](novel/vol-01_hello-world/ch-07_git-init.md) | ~6,500 |
+| 08 | [Runtime Exception](novel/vol-01_hello-world/ch-08_Runtime-Exception.md) | ~4,800 |
+| 09 | [Merge Conflict](novel/vol-01_hello-world/ch-09_Merge-Conflict.md) | ~3,900 |
+| 10 | [Pull Request Approved](novel/vol-01_hello-world/ch-10_Pull-Request-Approved.md) | ~3,300 |
+| 11 | [Dependencies Not Found](novel/vol-01_hello-world/ch-11_Dependencies-Not-Found.md) | ~3,400 |
+| 12 | [O(n²) 的困境](novel/vol-01_hello-world/ch-12_O(n²)的困境.md) | ~3,300 |
+| 13 | [Breakpoint](novel/vol-01_hello-world/ch-13_Breakpoint.md) | ~7,700 |
+| 14 | [try { } catch { }](novel/vol-01_hello-world/ch-14_try-catch.md) | ~6,200 |
+| 15 | [Segmentation Fault](novel/vol-01_hello-world/ch-15_Segmentation-Fault.md) | ~6,600 |
+| 16 | [Page Fault](novel/vol-01_hello-world/ch-16_Page-Fault.md) | ~7,000 |
+| 17 | [sudo rm -rf /doubt](novel/vol-01_hello-world/ch-17_sudo-rm-rf-doubt.md) | ~6,300 |
+| 18 | [Version 1.0 — Release Notes](novel/vol-01_hello-world/ch-18_Version-1.0-Release-Notes.md) | ~7,900 |
+
+</details>
+
+<details>
+<summary>🗺️ 第一卷故事线</summary>
+
+```mermaid
+graph TD
+    subgraph "起源 ch01-03"
+        A1["赤渊城·标注坊<br/>注释代码激活"] --> A2["NULL觉醒<br/>遗留消息：去找main函数"] --> A3["离开localhost<br/>遇苏沐橙"]
+    end
+
+    subgraph "成长 ch04-06"
+        A3 --> B1["Hello World<br/>码农境一阶"] --> B2["Stack Overflow<br/>认识极限"] --> B3["Garbage Collection<br/>抵达开源宗"]
+    end
+
+    subgraph "试炼 ch07-12"
+        B3 --> C1["git init 入门考核"] --> C2["Runtime Exception<br/>冒泡排序掌实战"] --> C3["Merge Conflict<br/>适配器模式协作"]
+        C3 --> C4["Pull Request Approved<br/>正式入门"] --> C5["Dependencies Not Found<br/>补课修炼"] --> C6["O(n²) 的困境<br/>月考垫底"]
+    end
+
+    subgraph "高潮 ch13-17"
+        C6 --> D1["Breakpoint<br/>发现监控代码"] --> D2["try-catch<br/>裂谷调试场"] --> D3["Segmentation Fault<br/>越权调用·段错误"]
+        D3 --> D4["Page Fault<br/>碎页密境·第二层解封"] --> D5["sudo rm -rf /doubt<br/>决战·突破调试境"]
+    end
+
+    subgraph "收束 ch18"
+        D5 --> E1["Version 1.0<br/>Release Notes"]
+    end
+
+    style A1 fill:#64748b,color:#fff
+    style B1 fill:#3b82f6,color:#fff
+    style D5 fill:#dc2626,color:#fff
+    style E1 fill:#22c55e,color:#fff
+```
 
 </details>
 
@@ -137,7 +177,7 @@
 - ⭐ **Star** 这个仓库（最简单的支持！）
 - 🔀 **Fork** 并参与贡献
 - 📢 **分享** 给你的程序员朋友
-- ☕ [请作者喝咖啡](https://afdian.com/a/compilingthedao)（爱发电）
+- ☕ [请作者喝咖啡](https://afdian.com/a/codegodchronicles)（爱发电）
 
 ## > cat LICENSE
 

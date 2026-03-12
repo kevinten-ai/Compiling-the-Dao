@@ -34,6 +34,12 @@
 | 蓝屏 | 内核崩溃 | Blue Screen (Kernel Panic) | 丹田严重崩溃的极端状态，修士陷入昏迷，需外力重启。 |
 | 断点感知 | 断点调试 | Breakpoint Perception | 调试境修士的标志能力，可在术式执行的关键节点设置"断点"来分析。 |
 | 多线程操控 | 多线程编程 | Multi-thread Control | 架构境修士可同时操控多条神识线程执行不同术式。 |
+| 注释代码 | 注释/被注释的代码 | Annotation Code (Commented Code) | 以`//`符号封印的远古禁码，封印在叶辰体内。逐层解封可获得不同能力，使用时会发出可探测的信号。 |
+| 旁路通道 | 旁路转发 | Bypass Channel | 经脉因长期超负荷形成的非正规灵力传输路径，类似CPU旁路转发机制，允许灵力绕过常规瓶颈。 |
+| 代码混淆 | 代码混淆 | Code Obfuscation | 注释代码第二层能力，使术式签名变得难以追踪和分析。 |
+| 越权调用 | 越权访问 | Privilege Escalation | 通过非常规手段调用超出自身权限等级的术式或能力，风险极高，可能导致段错误（Segmentation Fault）。 |
+| 适配层 | 适配器模式 | Adapter Layer (Adapter Pattern) | 在两套不兼容的编码规范之间建立转译中间层，使双方无需修改自身代码即可协同工作。 |
+| 垃圾回收术式 | 垃圾回收 | Garbage Collection Technique | 主动回收战斗或修炼中残留的废弃算力碎片，转化为自身补给的被动术式。 |
 
 ---
 

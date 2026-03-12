@@ -2,7 +2,41 @@
 
 > 天下术式，不过是对天道源码的不同调用方式罢了。
 
+![战斗术式体系图](../art/illustrations/combat-system.png)
+
 修士的战斗术式（Combat Techniques）本质上是对天道源码的调用与执行。术式按威力与复杂度分为**基础斗技、高级斗技、终极斗技**三大层次，其中基础斗技又以不同的**算法流派**进行分类。
+
+```mermaid
+mindmap
+  root((战斗术式体系))
+    基础斗技
+      排序术 Sorting
+        快排剑法 Quick Sort
+        冒泡掌 Bubble Sort
+        归并斩 Merge Sort
+        堆压顶 Heap Sort
+      搜索术 Searching
+        二分追踪 Binary Search
+        深度优先探索 DFS
+        广度扫描波 BFS
+        哈希定位 Hash
+      递归禁术 Recursion
+        无限递归
+        尾递归优化
+        分治天罗
+    高级斗技
+      多线程分身术
+      分布式合击阵
+      防火墙结界
+      注入攻击
+      死锁封印
+      垃圾回收
+    终极斗技
+      git revert 时间回溯
+      fork 世界分叉
+      merge 万流归一
+      rm -rf 湮灭
+```
 
 ---
 

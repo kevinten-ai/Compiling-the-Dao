@@ -2,7 +2,54 @@
 
 > 修炼之道，始于Hello World，终于造物。
 
+![修炼境界体系图](../art/illustrations/cultivation-system.png)
+
 本世界的修炼体系分为**八大境界**，每个境界对应计算机科学中的一个核心阶段。修士从最底层的码农境起步，逐步深入天道源码的底层，直至传说中可以从零创造世界的造物境。每个境界内部又细分为**一阶到九阶**，九阶圆满后方可尝试突破下一境界。
+
+```mermaid
+graph LR
+    A["码农境<br/>Junior Coder<br/>📝 Hello World"] -->|"发现并修复Bug"| B["调试境<br/>Debug<br/>🔍 断点感知"]
+    B -->|"重构核心术式"| C["重构境<br/>Refactor<br/>♻️ 优化结构"]
+    C -->|"设计术式体系"| D["架构境<br/>Architect<br/>🏗️ 多线程"]
+    D -->|"打通抽象与执行"| E["编译境<br/>Compiler<br/>⚡ 瞬间编译"]
+    E -->|"触及天道API"| F["内核境<br/>Kernel<br/>🔧 系统调用"]
+    F -->|"天道权限验证"| G["根权境<br/>Root<br/>👑 改写法则"]
+    G -->|"理解全部源码"| H["造物境<br/>Creator<br/>✨ 传说"]
+
+    style A fill:#4a9eff,color:#fff
+    style B fill:#47b881,color:#fff
+    style C fill:#e68a00,color:#fff
+    style D fill:#d94040,color:#fff
+    style E fill:#8b5cf6,color:#fff
+    style F fill:#0891b2,color:#fff
+    style G fill:#dc2626,color:#fff
+    style H fill:#eab308,color:#000
+```
+
+### 阶位进度示意
+
+```mermaid
+graph LR
+    subgraph "每个境界内部"
+        S1["一阶"] --> S2["二阶"] --> S3["三阶"]
+        S3 --> S4["四阶"] --> S5["五阶"] --> S6["六阶"]
+        S6 --> S7["七阶"] --> S8["八阶"] --> S9["九阶"]
+    end
+
+    S1 -.- L1["初期：初步理解"]
+    S4 -.- L2["中期：熟练运用"]
+    S7 -.- L3["后期：触及下一境界门槛"]
+
+    style S1 fill:#90cdf4
+    style S2 fill:#90cdf4
+    style S3 fill:#90cdf4
+    style S4 fill:#68d391
+    style S5 fill:#68d391
+    style S6 fill:#68d391
+    style S7 fill:#fc8181
+    style S8 fill:#fc8181
+    style S9 fill:#fc8181
+```
 
 ---
 
