@@ -1,22 +1,22 @@
 <div align="center">
 
-# 编神纪 · CodeGodChronicles
+# 编神纪 · Compiling the Dao
 
 ### 万物运行于天道源码之上，修炼的尽头是改写世界的权限。
 
 <img src="art/covers/main-cover-titled.png" width="350" alt="编神纪封面" />
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![GitHub stars](https://img.shields.io/github/stars/kevinten10/CodeGodChronicles?style=social)](https://github.com/kevinten10/CodeGodChronicles)
-[![GitHub issues](https://img.shields.io/github/issues/kevinten10/CodeGodChronicles)](https://github.com/kevinten10/CodeGodChronicles/issues)
+[![GitHub stars](https://img.shields.io/github/stars/kevinten-ai/Compiling-the-Dao?style=social)](https://github.com/kevinten-ai/Compiling-the-Dao)
+[![GitHub issues](https://img.shields.io/github/issues/kevinten-ai/Compiling-the-Dao)](https://github.com/kevinten-ai/Compiling-the-Dao/issues)
 [![word count](https://img.shields.io/badge/总字数-106%2C000-blue)]()
 [![chapters](https://img.shields.io/badge/已发布章节-18-green)]()
 [![volume](https://img.shields.io/badge/当前进度-第一卷已完结-brightgreen)]()
 
 [在线阅读](https://kevinten-ai.github.io/Compiling-the-Dao/) |
-[下载电子书](https://github.com/kevinten10/CodeGodChronicles/releases) |
+[下载电子书](https://github.com/kevinten-ai/Compiling-the-Dao/releases) |
 [世界观百科](worldbuilding/) |
-[参与讨论](https://github.com/kevinten10/CodeGodChronicles/discussions) |
+[参与讨论](https://github.com/kevinten-ai/Compiling-the-Dao/discussions) |
 [English](README_EN.md)
 
 </div>
